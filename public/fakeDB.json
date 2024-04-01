@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "CC TV",
+        "img": "https://i.ibb.co/rHdxmv0/ee36c9d56d9e0ea408ab9870e4031b21-removebg-preview.png"
+    },
+    {
+        "id": 2,
+        "title": "Computer",
+        "img": "https://i.ibb.co/ZgkGG45/computer-60x60-png.webp"
+    },
+    {
+        "id": 3,
+        "title": "motherboard",
+        "img": "https://i.ibb.co/QQdsyzq/motherboard-60x60-png.webp"
+    },
+    {
+        "id": 4,
+        "title": "Storage",
+        "img": "https://i.ibb.co/qx04vrb/storage-60x60-png.webp"
+    },
+    {
+        "id": 5,
+        "title": "Mouse",
+        "img": "https://i.ibb.co/MVztNhW/mouse-60x60-png.webp"
+    },
+    {
+        "id": 6,
+        "title": "Mobile",
+        "img": "https://i.ibb.co/NNMCwhj/button-phone-with-antenna-icon-isolated-on-white-background-free-vector-removebg-preview.png"
+    },
+    {
+        "id": 7,
+        "title": "Router",
+        "img": "https://i.ibb.co/tBz7RY2/istockphoto-1453351860-612x612-removebg-preview.png"
+    },
+    {
+        "id": 8,
+        "title": "Mobile Accessories",
+        "img": "https://i.ibb.co/4RQhCzH/set-of-icons-on-a-theme-accessories-supplies-for-mobile-phones-in-gray-colors-vector-removebg-previe.png"
+    },
+    {
+        "id": 9,
+        "title": "title 4",
+        "img": ""
+    },
+    {
+        "id": 10,
+        "title": "title 5",
+        "img": ""
+    }
+]
