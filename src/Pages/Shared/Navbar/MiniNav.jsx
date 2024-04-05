@@ -2,8 +2,6 @@ import React from "react";
 import {
   FaEnvelope,
   FaFacebook,
-  FaInfoCircle,
-  FaLinkedin,
   FaRegClock,
   FaRegUser,
   FaWhatsapp,
@@ -13,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const MiniNav = () => {
   return (
-    <div className="hidden md:flex lg:flex justify-between px-2 mt-2">
+    <div className="hidden md:flex lg:flex justify-between px-2 ">
       <div className="lg:flex gap-5">
         <div>
           <a className="flex items-center hover:text-[#FD7800]">

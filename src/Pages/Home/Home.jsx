@@ -1,4 +1,5 @@
 import Marquees from "../../components/Marquee/Marquees";
+import AllProducts from "../../components/Products/AllProducts";
 import MiniSlider from "../../components/Slider/MiniSlider/MiniSlider";
 import Slider from "../../components/Slider/Slider";
 import Category from "./Category";
@@ -13,6 +14,7 @@ const Home = () => {
             </div>
             <MiniSlider/>
             <Category/>
+            <AllProducts/>
         </div>
     );
 };

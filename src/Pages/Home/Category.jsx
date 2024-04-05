@@ -15,8 +15,8 @@ const Category = () => {
                 <p>Get Your Product By Categories</p>
             </div>
             
-            <div className="max-w-xl mx-auto bg-slate-200 grid grid-cols-5 gap-5">
-                {categories.map(category => <div className="flex flex-col items-center border bg-slate-400 w-20 h-20" key={category.id}>
+            <div className="max-w-[1100px] mx-auto bg-[#EEEEEE]  grid grid-cols-5 gap-5">
+                {categories.map(category => <div className="mx-auto bg-white p-5  flex flex-col items-center border  w-24 h-24 rounded" key={category.id}>
                     <img className="w-[55px] h-[55px]" src={category.img} alt="" />
                     <h3>{category.title}</h3>
                 </div>)}

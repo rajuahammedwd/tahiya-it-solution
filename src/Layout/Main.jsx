@@ -6,7 +6,7 @@ import MiniNav from "../Pages/Shared/Navbar/MiniNav";
 
 const Main = () => {
     return (
-        <div>
+        <div className="bg-[#EEEEEE]">
             <MiniNav/>
             <Navbar/>
            <Outlet/> 
