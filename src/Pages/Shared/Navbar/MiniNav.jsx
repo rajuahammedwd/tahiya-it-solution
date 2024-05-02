@@ -36,8 +36,8 @@ const MiniNav = () => {
               Sign In
             </Link>{" "}
             /{" "}
-            <Link to="/register" className="hover:text-[#FD7800]">
-              Register
+            <Link to="/signUp" className="hover:text-[#FD7800]">
+              Sign Up
             </Link>
           </li>
 
