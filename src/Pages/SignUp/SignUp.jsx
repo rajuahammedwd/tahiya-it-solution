@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import SocialMediaLogin from "../../components/SocialMediaLogin";
 
 const SignUp = () => {
     
@@ -40,7 +41,7 @@ const SignUp = () => {
     <div>
       <div className="hero bg-base-200 w-full">
         <div className="hero-content w-full">
-          <div className="card shrink-0 w-full max-w-xl shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="text-center">
               <h1 className="text-5xl font-bold mt-10">Sign Up</h1> 
             </div>
@@ -87,9 +88,10 @@ const SignUp = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-[#FD7800] text-white hover:text-[#FD7800] hover:bg-white">Login</button>
+                <button className="btn bg-[#FD7800] text-white hover:text-[#FD7800] hover:bg-white">Sign Up</button>
               </div>
             </form>
+            <SocialMediaLogin></SocialMediaLogin>
           </div>
         </div>
       </div>

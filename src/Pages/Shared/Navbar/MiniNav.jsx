@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   FaEnvelope,
   FaFacebook,
@@ -8,8 +8,19 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const MiniNav = () => {
+  const { users,signOut } = useContext(AuthContext);
+
+  const handleSignOut = ()=>{
+    signOut()
+    .then(()=>{})
+    .catch(error=>{
+      console.log(error)
+    })
+  }
+
   return (
     <div className="hidden md:flex lg:flex justify-between px-2 ">
       <div className="lg:flex gap-5">
@@ -30,22 +41,34 @@ const MiniNav = () => {
           {/* <li className="flex items-center border-r-2 pr-2 hover:text-[#FD7800]">
             <FaInfoCircle className="mr-2"></FaInfoCircle>Need Help
           </li> */}
-          <li className="flex items-center border-r-2 pr-2">
-            <FaRegUser className="mr-2"></FaRegUser>
-            <Link to="/login" className="hover:text-[#FD7800]">
-              Sign In
-            </Link>{" "}
-            /{" "}
-            <Link to="/signUp" className="hover:text-[#FD7800]">
-              Sign Up
-            </Link>
-          </li>
+          {users ? (
+            <btn onClick={handleSignOut} className="flex items-center border-r-2 pr-2 hover:text-[#FD7800]">Signout</btn>
+          ) : (
+            <li className="flex items-center border-r-2 pr-2">
+              <FaRegUser className="mr-2"></FaRegUser>
+              <Link to="/signIn" className="hover:text-[#FD7800]">
+                Sign In
+              </Link>{" "}
+              /{" "}
+              <Link to="/signUp" className="hover:text-[#FD7800]">
+                Sign Up
+              </Link>
+            </li>
+          )}
 
           <li className="flex items-center border-r-2 pr-2 hover:text-[#138BEE]">
-            <a href="https://www.facebook.com/Tahiya.it/" target="_blank" rel="noopener noreferrer"><FaFacebook className="mr-2"></FaFacebook></a>
+            <a
+              href="https://www.facebook.com/Tahiya.it/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="mr-2"></FaFacebook>
+            </a>
           </li>
           <li className="flex items-center border-r-2 pr-2 hover:text-[#0DC143]">
-            <a href="https://wa.me/+8801945004592" target="_blank"><FaWhatsapp className="mr-2"></FaWhatsapp></a>
+            <a href="https://wa.me/+8801945004592" target="_blank">
+              <FaWhatsapp className="mr-2"></FaWhatsapp>
+            </a>
           </li>
           <li className="flex items-center hover:text-[#D51A1B]">
             <a href="https://maps.app.goo.gl/vhg7gCZYbBKdnYqJ7" target="_blank">
